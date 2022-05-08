@@ -1,18 +1,9 @@
 import 'dart:core';
 
+import 'package:olive/extensions/string_logical_extensions.dart';
 import 'package:olive/type_defs.dart';
 
-extension StringExtensions on String? {
-  /// <summary>
-  /// Whether this string is null or empty.
-  /// </summary>
-  bool get isEmptyOrNull => this?.isEmpty ?? true;
-
-  /// <summary>
-  /// Whether this string is not null and empty.
-  /// </summary>
-  bool get isNotEmptyAndNull => !isEmptyOrNull;
-
+extension NullableStringExtensions on String? {
   /// <summary>
   /// Gets the same string if it is not null or empty. Otherwise it returns the specified default value.
   /// </summary>

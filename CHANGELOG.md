@@ -8,3 +8,7 @@
 
 * This release includes limitMin, limitMax, and limitWithin for both int and double data types.
 * Also includes microseconds, milliseconds, seconds, minutes, hours, and days for the int data type.
+
+## 0.0.3
+
+* This release includes microseconds, milliseconds, seconds, minutes, hours, and days for the double data type.
