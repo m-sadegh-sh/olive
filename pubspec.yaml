@@ -1,0 +1,11 @@
+name: olive
+description: Olive contains a set of extension methods and utilities written purely on top of the dart to make the cross-platform software development easier, cleaner, and more expressive. It is going to be a port of the original Olive project.
+version: 0.0.1
+homepage: https://pub.dev/packages/olive
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dev_dependencies:
+  lint: ^1.8.2
+  test: ^1.21.1
