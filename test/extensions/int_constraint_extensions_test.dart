@@ -2,7 +2,7 @@ import 'package:olive/extensions/int_constraint_extensions.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("IntExtensions", () {
+  group("IntConstraintExtensions", () {
     group("limitMin should return", () {
       const minValue = 0;
 

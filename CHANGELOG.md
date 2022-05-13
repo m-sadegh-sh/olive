@@ -12,3 +12,7 @@
 ## 0.0.3
 
 * This release includes microseconds, milliseconds, seconds, minutes, hours, and days for the double data type.
+
+## 0.0.4
+
+* This release includes exceptNull, and whereNull for the Iterable type.

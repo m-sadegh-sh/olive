@@ -2,7 +2,7 @@ import 'package:olive/extensions/string_conversion_extensions.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("StringExtensions", () {
+  group("StringConversionExtensions", () {
     group("or should return", () {
       const defaultValue = 'the default value';
 

@@ -2,7 +2,7 @@ import 'package:olive/extensions/string_logical_extensions.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("StringExtensions", () {
+  group("StringLogicalExtensions", () {
     group("isEmptyOrNull should return", () {
       test('true for null values', () {
         String? value;

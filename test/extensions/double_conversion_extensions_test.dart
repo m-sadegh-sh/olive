@@ -2,7 +2,7 @@ import 'package:olive/extensions/double_conversion_extensions.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("DoubleExtensions", () {
+  group("DoubleConversionExtensions", () {
     group("milliseconds should return", () {
       test('zero for null values', () {
         double? value;

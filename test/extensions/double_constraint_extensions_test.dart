@@ -2,7 +2,7 @@ import 'package:olive/extensions/double_constraint_extensions.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("DoubleExtensions", () {
+  group("DoubleConstraintExtensions", () {
     group("limitMin should return", () {
       const minValue = 0.0;
 

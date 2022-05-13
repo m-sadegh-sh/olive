@@ -1,8 +1,8 @@
-import 'package:olive/extensions.dart';
+import 'package:olive/extensions/int_conversion_extensions.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group("IntExtensions", () {
+  group("IntConversionExtensions", () {
     group("microseconds should return", () {
       test('zero for null values', () {
         int? value;
