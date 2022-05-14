@@ -16,3 +16,8 @@
 ## 0.0.4
 
 * This release includes exceptNull, and whereNull for the Iterable type.
+
+## 0.0.5
+
+* This release includes exceptNull, and whereNull for the Stream type.
+* This release includes singleOrNull, firstOrNull, lastOrNull, elementAtOrNull, mapIndex, indexOrNull, and lastIndexOrNull for the Iterable type.

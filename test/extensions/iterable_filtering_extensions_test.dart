@@ -36,5 +36,110 @@ void main() {
         );
       });
     });
+
+    group("singleOrNull should return", () {
+      test('an error due to matching multiple elements', () {
+        final value = [2, 10, 2];
+        int? filteredValue() => value.singleOrNull((x) => x == 2);
+        expect(
+          filteredValue,
+          throwsStateError,
+        );
+      });
+
+      test('null as it could not find the expected element', () {
+        final value = [2, 10, 12];
+        final filteredValue = value.singleOrNull((x) => x == 25);
+        expect(
+          filteredValue,
+          isNull,
+        );
+      });
+
+      test('the expected value', () {
+        final value = [2, 10, 12];
+        final filteredValue = value.singleOrNull((x) => x == 2);
+        expect(
+          filteredValue,
+          equals(2),
+        );
+      });
+    });
+
+    group("firstOrNull should return", () {
+      test('null as it could not find the expected element', () {
+        final value = [
+          {'id': 1, 'name': 'Joe'},
+          {'id': 1, 'name': 'Dan'},
+          {'id': 3, 'name': 'Mohammad'},
+        ];
+        final filteredValue = value.firstOrNull((x) => x!['id'] == 12);
+        expect(
+          filteredValue,
+          isNull,
+        );
+      });
+
+      test('the expected value', () {
+        final value = [
+          {'id': 1, 'name': 'Joe'},
+          {'id': 1, 'name': 'Dan'},
+          {'id': 3, 'name': 'Mohammad'},
+        ];
+        final filteredValue = value.firstOrNull((x) => x!['id'] == 1);
+        expect(
+          filteredValue,
+          value[0],
+        );
+      });
+    });
+
+    group("lastOrNull should return", () {
+      test('null as it could not find the expected element', () {
+        final value = [
+          {'id': 1, 'name': 'Joe'},
+          {'id': 1, 'name': 'Dan'},
+          {'id': 3, 'name': 'Mohammad'},
+        ];
+        final filteredValue = value.lastOrNull((x) => x!['id'] == 12);
+        expect(
+          filteredValue,
+          isNull,
+        );
+      });
+
+      test('the expected value', () {
+        final value = [
+          {'id': 1, 'name': 'Joe'},
+          {'id': 1, 'name': 'Dan'},
+          {'id': 3, 'name': 'Mohammad'},
+        ];
+        final filteredValue = value.lastOrNull((x) => x!['id'] == 1);
+        expect(
+          filteredValue,
+          value[1],
+        );
+      });
+    });
+
+    group("elementAtOrNull should return", () {
+      test('null as it could not find anything at the expected index', () {
+        final value = [2, 10, 12];
+        final filteredValue = value.elementAtOrNull(3);
+        expect(
+          filteredValue,
+          isNull,
+        );
+      });
+
+      test('the expected value', () {
+        final value = [2, 10, 12];
+        final filteredValue = value.elementAtOrNull(2);
+        expect(
+          filteredValue,
+          equals(12),
+        );
+      });
+    });
   });
 }
