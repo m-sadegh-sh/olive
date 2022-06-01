@@ -21,3 +21,7 @@
 
 * This release includes exceptNull, and whereNull for the Stream type.
 * This release includes singleOrNull, firstOrNull, lastOrNull, elementAtOrNull, mapIndex, indexOrNull, and lastIndexOrNull for the Iterable type.
+
+## 0.0.6
+
+* This release introduces no new API, just a few issues with the pub.dev analyzer has been fixed.
